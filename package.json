@@ -1,0 +1,18 @@
+{
+  "name": "twig-snippets",
+  "main": "./lib/twig-snippets",
+  "version": "0.1.0",
+  "description": "Snippets for Symfony Twig template",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "twig-snippets:toggle"
+  },
+  "repository": "https://github.com/atom/twig-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

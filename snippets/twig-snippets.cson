@@ -1,0 +1,136 @@
+'.html.twig':
+  # Tags
+  '{% block … %}':
+    'prefix': 'block'
+    'body': '{% block $1 %}\n{% endblock %}'
+
+  '{% embed … %}':
+    'prefix': 'embed'
+    'body': '{% embed "$1" %}\n{% endembed %}'
+  '{% embed … with … %}':
+    'prefix': 'embedw'
+    'body': '{% embed "$1" with {$1} %}\n{% endembed %}'
+  '{% embed … ignore missing %}':
+    'prefix': 'embedi'
+    'body': '{% embed "$1" ignore missing %}\n{% endembed %}'
+
+  '{% extends … %}':
+    'prefix': 'ext'
+    'body': '{% extends $1 %}\n'
+
+  '{% else %}':
+    'prefix': 'else'
+    'body': '{% else %}\n'
+
+  '{% for … in … %}':
+    'prefix': 'for'
+    'body': '{% for $1 in $1 %}\n{% endfor %}'
+  '{% for … in … %}{% else %}':
+    'prefix': 'fore'
+    'body': '{% for $1 in $1 %}\n{% else %}\n{% endfor %}'
+
+  '{% from … import …%}':
+    'prefix': 'from'
+    'body': '{% from "$1" import $1 %}\n'
+
+  '{% if … %}':
+    'prefix': 'if'
+    'body': '{% if $1 %}\n{% endif %}'
+  '{% if … is … %}':
+    'prefix': 'ifis'
+    'body': '{% if $1 is $1 %}\n{% endif %}'
+  '{% if not … %}':
+    'prefix': 'ifnot'
+    'body': '{% if not $1 %}\n{% endif %}'
+  '{% if … else %}':
+    'prefix': 'ife'
+    'body': '{% if $1 %}\n{% else %}\n{% endif %}'
+  '{% if … elseif … %}':
+    'prefix': 'ifelif'
+    'body': '{% if $1 %}\n{% elseif $1 %}\n{% endif %}'
+
+  '{% import … as … %}':
+    'prefix': 'imp'
+    'body': '{% import \'$1\' as $1 %}\n'
+
+  '{% include … %}':
+    'prefix': 'inc'
+    'body': '{% include $1 %}\n'
+
+  '{% macro … %}':
+    'prefix': 'macro'
+    'body': '{% macro $1 %}\n{% endmacro %}'
+
+  '{% sandbox %}':
+    'prefix': 'sand'
+    'body': '{% sandbox %}\n{% endsandbox %}'
+
+  '{% set … = … %}':
+    'prefix': 'set'
+    'body': '{% set $1 = $1 %}\n'
+  '{% set … %}':
+    'prefix': 'sete'
+    'body': '{% set $1 %}\n{% endset %}'
+
+  '{% trans %} … {% endtrans %}':
+    'prefix': 'trans'
+    'body': '{% trans %} $1 {% endtrans %}'
+
+  '{% use … %}':
+    'prefix': 'use'
+    'body': '{% use $1 %}\n'
+  '{% use … with … as … %}':
+    'prefix': 'usew'
+    'body': '{% use $2 with $1 as $1 %}\n'
+
+  '{% verbatim %}':
+    'prefix': 'verb'
+    'body': '{% verbatim %}\n{% endverbatim %}'
+
+  '{% with … %}':
+    'prefix': 'with'
+    'body': '{% with $1 %}\n{% endwith %}'
+  # Functions
+  'absolute_url(…)':
+    'prefix': 'absu'
+    'body': 'absolute_url($1)'
+
+  'asset(…)':
+    'prefix': 'asset'
+    'body': 'asset($1)'
+
+  'asset_version(…)':
+    'prefix': 'assetv'
+    'body': 'asset_version($1)'
+
+  'csrf_token(…)':
+    'prefix': 'csrf'
+    'body': 'csrf_token($1)'
+
+  'is_granted(…)':
+    'prefix': 'isgranted'
+    'body': 'is_granted($1)'
+
+  'logout_path(…)':
+    'prefix': 'logoutp'
+    'body': 'logout_path($1)'
+
+  'logout_url(…)':
+    'prefix': 'logoutu'
+    'body': 'logout_url($1)'
+
+  'path(…)':
+    'prefix': 'path'
+    'body': 'path($1)'
+
+  'relative_path(…)':
+    'prefix': 'relp'
+    'body': 'relative_path($1)'
+
+  'url(…)':
+    'prefix': 'url'
+    'body': 'url($1)'
+  # Other
+  '{# ... #}':
+    'prefix': 'comment'
+    'body': '{# $1 #}'
